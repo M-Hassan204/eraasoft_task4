@@ -8,10 +8,7 @@ namespace eraasoft_task4.Accounts
     {
         private int WithdrawCount = 0;
 
-        public TrustAccount(
-            string name = "Unnamed Trust Account",
-            double balance = 0.0,
-            double interestRate = 0.0)
+        public TrustAccount(string name = "Unnamed Trust Account",double balance = 0.0,double interestRate = 0.0)
             : base(name, balance, interestRate)
         {
         }

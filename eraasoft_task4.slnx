@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="eraasoft_task4/eraasoft_task4.csproj" />
+  <Project Path="searchtask1/searchtask1.csproj" Id="a21d20b1-9b25-48df-b794-50a9576963d3" />
+  <Project Path="searchtask2/searchtask2.csproj" Id="c1ce6e87-d926-45db-9743-6c32a8edb461" />
 </Solution>
