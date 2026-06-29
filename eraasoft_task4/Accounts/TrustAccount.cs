@@ -6,6 +6,7 @@ namespace eraasoft_task4.Accounts
 {
     internal class TrustAccount : SavingsAccount
     {
+        private DateTime withdrawYear = DateTime.Now;
         private int WithdrawCount = 0;
 
         public TrustAccount(string name = "Unnamed Trust Account",double balance = 0.0,double interestRate = 0.0)
@@ -23,6 +24,11 @@ namespace eraasoft_task4.Accounts
 
         public override bool Withdraw(double amount)
         {
+            if (DateTime.Now.Year != withdrawYear.Year)
+            {
+                WithdrawCount = 0;
+                withdrawYear = DateTime.Now;
+            }
             if (WithdrawCount >= 3)
                 return false;
 
